@@ -1,0 +1,93 @@
+/* Colors and Fonts! */
+
+*{
+	background: black;
+}
+body{
+	color: whitesmoke;
+	font-family: Arial;
+	font-size: 12pt;
+	text-align: left
+		
+h2{
+}
+	color:#f8f8ff
+}
+h3{
+	color:#f26a8d
+}
+h4{
+	color:#c8b6e3
+}
+
+.DivContentContainer{
+/* 	border: 20px solid red; */
+/* 	border-left: 20pt solid red */
+	margin: 5%;
+	margin-top: 0%;
+}
+
+.TopBar{
+	margin-top: 5%;
+/* 	border: red solid 2px */
+}
+hr{
+	color: var(--secondary);
+}
+#Logo{
+	color: var(--secondary);
+	font-size:32pt;
+	text-decoration: none;
+	font-weight: bolder
+}
+.TopLink{
+	color: var(--secondary);
+	font-size: 20pt;
+	text-decoration: none;
+	margin-left: 4%
+}
+
+p{
+	font-weight: lighter;
+	font-size: 16pt;
+	text-align: left;
+}
+/* a{ */
+/* 	color: inherit; */
+/* 	text-decoration: none; */
+/* 	font-style: italic; */
+/* } */
+
+#catBox{
+    /* border: solid red 2px; */
+    display: flex;
+	flex-wrap: wrap;  
+    justify-content: center;
+    /* gap: 1%; */
+	margin:2%;
+	flex-shrink: 0;
+/* 	  margin-left: 20% */
+}
+
+#catBox img{
+	margin: 3%;
+	object-fit: contain;
+	width: 33.3%;
+	height: auto;
+}
+
+.email{
+	text-decoration: none;
+	color: var(--primary);
+	font-style: italic;
+}
+
+footer{
+	margin: 5%;
+	min-height: 400px;
+	background-image: url('rsc/magpie_ascii.svg');
+	background-position: 75% 75%;
+	background-size: 25%;
+	background-repeat: no-repeat;
+	/* border: red solid 2px; */
+}

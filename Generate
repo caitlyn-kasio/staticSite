@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# ls *.template
+
+# PARENT_TEMPLATE=`template.html`
+BEFORE_CONTENT=`grep -B100 {CONTENT} template.html | head -n -1`
+AFTER_CONTENT=`grep -A100 {CONTENT} template.html | tail -n +2`
+	# Load all .template files
+for i in `ls *.template`; do
+	# echo $i
+
+
+	v=`echo $i | grep -oE "[a-zA-Z]+\." | grep -oE "[a-zA-Z]+"`
+	# echo $v
+
+	TO_FILL=`cat $i`
+	# echo $TO_FILL
+	OUT="$BEFORE_CONTENT $TO_FILL $AFTER_CONTENT"
+	
+	echo $OUT > output/$v.html
+	
+done
