@@ -5,20 +5,10 @@
 }
 body{
 	color: whitesmoke;
-	font-family: Arial;
+	font-family: Barlow;
 	font-size: 12pt;
-	text-align: left
-		
-h2{
-}
-	color:#f8f8ff
-}
-h3{
-	color:#f26a8d
-}
-h4{
-	color:#c8b6e3
-}
+	text-align: left;
+
 
 .DivContentContainer{
 /* 	border: 20px solid red; */
@@ -38,17 +28,27 @@ hr{
 	color: var(--secondary);
 	font-size:32pt;
 	text-decoration: none;
-	font-weight: bolder
+	font-weight: bolder;
+	font-style: normal
 }
+	
 .TopLink{
 	color: var(--secondary);
 	font-size: 20pt;
 	text-decoration: none;
-	margin-left: 4%
+	margin-left: 4%;
+	font-style: normal
+}
+
+a{
+	text-decoration: underline;
+	color: whitesmoke;
+	font-style: italic;
+	font-size: 18pt
 }
 
 p{
-	font-weight: lighter;
+/* 	font-weight: ; */
 	font-size: 16pt;
 	text-align: left;
 }
@@ -76,17 +76,32 @@ p{
 	height: auto;
 }
 
+.demoImg{
+  width: 50%;
+	height: auto;
+	border: 1px solid whitesmoke
+}
+
 .email{
 	text-decoration: none;
 	color: var(--primary);
 	font-style: italic;
 }
-
+	
+	.inlineImage{
+		width: 50%;
+	  margin-inline: 20%
+	}
+	..codeBlock{
+		overflow-x: auto;
+		display: block;
+		white-space: pre;
+	}
 footer{
 	margin: 5%;
-	min-height: 400px;
+	min-height: 350px;
 	background-image: url('rsc/magpie_ascii.svg');
-	background-position: 75% 75%;
+	background-position: 80%;
 	background-size: 25%;
 	background-repeat: no-repeat;
 	/* border: red solid 2px; */
